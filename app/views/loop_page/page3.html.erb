@@ -1,6 +1,6 @@
 <head>      
   <meta charset="utf-8">
-  <title>repo_tst</title>
+  <title>rails_test</title>
   <!-- ユーザーや検索エンジンにページの概要や要約を伝える役割-->
   <meta name="description" content="html/cssの基礎学習">
   <!-- 文書の著作者の名前を記述する為に指定-->
@@ -15,12 +15,10 @@
   <link rel="stylesheet" href="test.css">
 </head>
 
-<form accept-charset="UTF-8" action="/articles/update/" method="post">
+<form accept-charset="UTF-8" action="/loop_page/page2" method="get">
   <input type="text" name="client[name]" value="Acme" />
   <input type="text" name="client[phone]" value="12345" />
   <input type="text" name="client[address][postcode]" value="12345" />
   <input type="text" name="client[address][city]" value="Carrot City" />
-  <input type="submit" value="post data" />
-</form>charset
-
-<button type="button" class="btn btn-primary">page1へ</button>  
+  <input type="submit" value="page1へ" />
+</form>
