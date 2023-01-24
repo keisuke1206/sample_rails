@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get "/articles/:id", to: "articles#show"
   post "/articles/update",to:"articles#update"
   get "/loop_page/page1",to:"loop_page#page1"
+  post "/loop_page/page1",to:"loop_page#page2"
   get "/loop_page/page2",to:"loop_page#page2"
+  post "/loop_page/page2",to:"loop_page#page3"
   get "/loop_page/page3",to:"loop_page#page3"
+  post "/loop_page/page2",to:"loop_page#page1"
 end
