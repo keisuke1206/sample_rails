@@ -5,13 +5,13 @@ def loop_page
 end
 
 def page1
-    render template:"loop_page/page1"
+    render :text => "値 = #{params[:num]}"
 end
-    
+
 def page2
-    render template:"loop_page/page2"
+    render :text => "値 = #{params[:num]}"
 end
-    
+
 def page3
     render template:"loop_page/page3"
 end
