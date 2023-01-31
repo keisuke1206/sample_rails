@@ -30,16 +30,18 @@
   <input type="text" name="client[address][city]" value="Carrot City" />
   <input type="submit" value="page2へ"/>
 </form>
-</body>
 
 <p>paramsサンプル</p>
-<body>
 <form method="post" action="/loop_page/page2">
  <p>
  値：<input type="text" name="num"/><br />
  <input type="submit" value="送信" />
  </p>
 </form>
-<body>
 
+
+<p>page3</p>
+前の画面で入力された値は<%= @hoge1 %>です
+
+<body>
 </html>
