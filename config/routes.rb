@@ -5,14 +5,15 @@ Rails.application.routes.draw do
   post "/articles/update",to:"articles#update"
 
   get "/loop_page/page1",to:"loop_page#page1"
-  post "/loop_page/page1",to:"loop_page#page2"
-  post "/loop_page/page1" => "loop_page#page2"
+  post "/loop_page/page1",to:"loop_page#page1"
 
   get "/loop_page/page2",to:"loop_page#page2"
-  post "/loop_page/page2",to:"loop_page#page3"
-  post "/loop_page/page2" => "loop_page#page3"
+  post "/loop_page/page2",to:"loop_page#page2"
 
   get "/loop_page/page3",to:"loop_page#page3"
-  post "/loop_page/page2",to:"loop_page#page1"
-  post "/loop_page/page2" => "loop_page#page1"
+  post "/loop_page/page3" => "loop_page#page3"
+
+  get "/loop_page/page4",to:"loop_page#page4"
+  post "/loop_page/page4_post"
+
 end
