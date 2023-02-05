@@ -24,6 +24,9 @@ end
 
 def page4
     Rails.logger.debug '---page4'
+    @value1 = params[:num]
+    @value2 = params[:num]
+    render template:"loop_page/page5"
 end
 
 def page4_post
