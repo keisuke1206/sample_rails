@@ -24,11 +24,8 @@ end
 
 def page4
     Rails.logger.debug '---page4'
-    @result = Result.find params[:calculation_method] 
-    @method1 = @result["加算"] 
-    @keisan = Keisan.find params[:id] 
-    @number1 = @keisan["number1"] 
-    @number2 = @keisan["number2"]
+    @result = params[:calculation_method] 
+    @keisan = params[:number] 
     render template:"loop_page/page5"
 end
 
