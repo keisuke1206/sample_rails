@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
 
   <title>rails_test</title>
-
+  
   <!-- ユーザーや検索エンジンにページの概要や要約を伝える役割-->
   <meta name="description" content="html/cssの基礎学習">
 
@@ -12,12 +13,6 @@
 
   <!-- 端末の画面の表示方法-->
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-  <!-- bootstrapのlink-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <!-- ccsを連携させるlink-->
-  <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
@@ -30,24 +25,23 @@
 
 <h1>
 <form method="post" action="/loop_page/page5">
-<input class="btn btn-primary" type="submit" value="加算"
-=link_to"/loop_page/page5" >
-<input class="btn btn-primary" type="submit" value="減算"
-=link_to"/loop_page/page5">
-<input class="btn btn-primary" type="submit" value="乗算"
-=link_to"/loop_page/page5">
-<input class="btn btn-primary" type="submit" value="除算"
-=link_to"/loop_page/page5">
+<input class="btn btn-primary" type="submit" value="加算" />
+<form method="post" action="/loop_page/page5">
+<input class="btn btn-primary" type="submit" value="減算" />
+<form method="post" action="/loop_page/page5">
+<input class="btn btn-primary" type="submit" value="乗算" />
+<form method="post" action="/loop_page/page5">
+<input class="btn btn-primary" type="submit" value="除算" />
 
 <h2>
-値：<input type="text" name="num"/><br />
-値：<input type="text" name="num"/><br />
+<%= form_for @number1 do |form| %>
+<%= form_for @number2 do |form| %>
+値：<input type="text" name="number1"/><br/>
+値：<input type="text" name="number2"/><br/>
 </h2>
+
 </form>
-</h1>
-
-
+<h1>
 
 <body>
-
 </html>

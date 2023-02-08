@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   post "/loop_page/page4",to:"loop_page#page4"
   post "/loop_page/page4_post"
 
+  get "/loop_page/page5",to:"loop_page#page5"
+  post "/loop_page/page5",to:"loop_page#page5"
 end
