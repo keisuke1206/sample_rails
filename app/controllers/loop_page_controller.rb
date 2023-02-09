@@ -15,7 +15,7 @@ class  LoopPageController< ApplicationController
         @hoge2 = params[:num]
         render template:"loop_page/page2"
     end
-
+    
     def page3
         Rails.logger.debug '---page3'
         @hoge3 = params[:num]
@@ -38,5 +38,4 @@ class  LoopPageController< ApplicationController
 
     def page5
     end
-
 end
