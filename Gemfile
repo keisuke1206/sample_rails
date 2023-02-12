@@ -71,7 +71,16 @@ group :test do
   gem "webdrivers"
 end
 
+gem 'bootstrap', '~> 5.2.2'
 
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2'
-gem "jquery-rails"
+source 'https://rubygems.org'
+
+gemspec
+
+group :development do
+  gem 'popper_js', '>= 1.12.3'
+end
+
+group :debug do
+  gem 'byebug', platforms: [:mri], require: false
+end
