@@ -37,7 +37,7 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -72,15 +72,4 @@ group :test do
 end
 
 gem 'bootstrap', '~> 5.2.2'
-
-source 'https://rubygems.org'
-
-gemspec
-
-group :development do
-  gem 'popper_js', '>= 1.12.3'
-end
-
-group :debug do
-  gem 'byebug', platforms: [:mri], require: false
-end
+gem 'jquery-rails'
